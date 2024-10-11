@@ -1,0 +1,39 @@
+{
+    "modelSettings": {
+        "id": {
+            "type": "STRING",
+            "primaryKey": true
+        },
+        "benCoins": {
+            "type": "BIGINT",
+            "allowNull": false
+        },
+        "level": {
+            "type": "BIGINT",
+            "allowNull": false
+        },
+        "experience": {
+            "type": "BIGINT",
+            "allowNull": false
+        },
+        "messagesSent": {
+            "type": "INTEGER",
+            "allowNull": false
+        },
+        "inventory": {
+            "type": "BLOB",
+            "allowNull": true
+        },
+        "about": {
+            "type": "STRING",
+            "allowNull": false
+        }
+    },
+    "defaultValues": {
+        "benCoins": 0,
+        "level": 0,
+        "experience": 0,
+        "messagesSent": 0,
+        "about": "(This user does not have an about me section. Make one now! Use the command /about_change to start!)"
+    }
+}

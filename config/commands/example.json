@@ -1,0 +1,5 @@
+{
+    "commandName": "example_command",
+    "commandDesc": "My wonderful example command",
+    "ephemeral": false
+}

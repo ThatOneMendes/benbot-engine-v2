@@ -1,0 +1,8 @@
+{
+    "hackLinks": {
+        "enabled": true,
+        "chance": 3,
+        "maxAmount": 50,
+        "chanceToBeInfested": 30
+    }
+}

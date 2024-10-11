@@ -1,0 +1,19 @@
+{
+    "0|9": {
+        "exp_trinket|main": 1,
+        "xp_boost|tier_1": 73,
+        "image_perms|tier_1": 19,
+        "backpack_enhancer|main": 7
+    },
+    "10|19": {
+        "xp_boost|tier_3": 5,
+        "xp_boost|tier_2": 47,
+        "image_perms|tier_2": 30,
+        "backpack_enhancer|main": 18
+    },
+    "20|39": {
+        "gift|tier_1": 10,
+        "xp_boost|tier_3": 50,
+        "image_perms|tier_3": 40
+    }
+}

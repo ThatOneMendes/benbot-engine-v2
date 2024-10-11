@@ -1,0 +1,836 @@
+{
+    "notEnoughBenCoins": "You dont have enough {currencyName}!",
+    "inventoryFull": "Your inventory is full!",
+    "unknownErrorAddingItem": "An unknown error occoured! Come back later!",
+    "canOnlyHoldOneItemAtATime": "You can only hold one of {itemName} at a time!",
+    "levelUp": [
+        "{user} is now level {level}!\nIQ went up by 1! You also got {freePoints} stat points!",
+        "Congrations! {user} is now level {level}! You also got {freePoints} stat points!",
+        "{user} leveled up to level {level}!\nHP + 2\nDef. + 1\nSP. Def + 0\nSP. Atk + 1\nAtk + 2\nSpeed + 3\nYou also got {freePoints} stat points!",
+        "{user} is now level {level}! You also got {freePoints} stat points!",
+        "Hooray! {user} is now level {level}! You also got {freePoints} stat points!"
+    ],
+    "levelUpItemAdd": {
+        "normal": "\nYou also got the {itemName} item as a reward for leveling up!",
+        "errorCode-1": "\nYou got {benCoins} bencoins as a reward!",
+        "errorCode0": "\nYou could have obtained the {itemName} item as a reward for leveling up, but your inventory is full!\nYou got {benCoins} bencoins as a reward instead.",
+        "errorCode1": "\nYou could have obtained the {itemName} item as a reward for leveling up, but you can only carry one of this item!\nYou got {benCoins} bencoins as a reward instead.",
+        "alreadyHasImagePerms": "\nYou could have obtained the {itemName} item as a reward for leveling up, but you already have the regular image perms role!\nYou got {benCoins} bencoins as a reward instead.",
+        "expTrinketBroke": "Your exp trinket also broke!"
+    },
+    "manage_item": {
+        "addItem": "Added {amount} {itemName} to {user}'s inventory!",
+        "removeItem": "Removed {amount} {itemName} from {user}'s inventory!",
+        "errorNoSubtype": "There is no subtype for the item \"{itemID}\" with name \"{itemSubtype}\"!",
+        "errorItemMissing": "There is no such item with id \"{itemID}\"!",
+        "embed": {
+            "title": "/manage item used",
+            "fields": {
+                "itemID": "Item Name:",
+                "amount": "Amount:",
+                "action": "Action",
+                "reason": "Reason:"
+            }
+        }
+    },
+    "shop": {
+        "embeds": {
+            "footer": "Time left until next restock: {timeLeft}",
+            "items": {
+                "title": "Welcome to section 1F of the shop: Items.",
+                "description": "Every 30 minutes, three new items are put on sale, but be quick! They have limited stock!\nYou have {benCoins} {currencyName}.",
+                "field": "{itemDesc}\nPrice: {price}\nStock: {stock}",
+                "itemFlag_consumable": "\n**This item is consumable:**\nUse it with the `/use item {itemName}` command.",
+                "itemFlag_canOnlyCarryOne": "\n**There can be only one of this item in your inventory:**\nSo if you already have this item, you can't get another."
+            },
+            "wallpapers": {
+                "title": "Welcome to section 4A of the shop: Wallpapers",
+                "description": "Each 30 minutes, 4 wallpapers are chosen to be sold, unlike items, those have unlimited stock.\nYou have {benCoins} {currencyName}",
+                "field": "{wallpaperDesc}\nPrice: {price}"
+            }
+        }
+    },
+    "shop_select": {
+        "items": {
+            "errors": {
+                "itemStockEnded": "Were out of stock for {itemName}!",
+                "itemNotOnSale": "This item is not on sale anymore!"
+            },
+            "itemBought": "Bought {itemName}!"
+        },
+        "wallpapers": {
+            "errors": {
+                "wallpaperNotOnSale": "This wallpaper is not on sale anymore!",
+                "alreadyHasWallpaper": "You already has this wallpaper!"
+            },
+            "confirmation": "Are you sure you want to buy this wallpaper? Your user info card will look like this:",
+            "wallpaperBought": "Wallpaper bought!"
+        }
+    },
+    "userInfo": {
+        "attemptSeeBotsInfo": "You can't see information about bots!"
+    },
+    "change_wallpaper": {
+        "errors": {
+            "wallpaperMissing": "The wallpaper {wallpaper} does not exist!",
+            "wallpaperNotOwned": "You do not own the wallpaper {wallpaper}!",
+            "wallpaperAlreadyEquipped": "You already has this wallpaper equipped!"
+        },
+        "success": "You equipped the wallpaper {wallpaper}!"
+    },
+    "roastBattle": {
+        "challengeSent": "Challenge sent!",
+        "errors": {
+            "attemptChallengeBot": "You can't challenge a bot!",
+            "attemptChallengeYourself": "You can't challenge yourself!",
+            "userOrEnemyInMatch": "Either you or your enemy is already on a match with someone else!"
+        },
+        "challengeEmbed": {
+            "description": "{user} is challenging {challngedUser} to a roast battle!\n{challengedUser} must click in the \"Accept\" button to start the match.",
+            "title": "Roast battle",
+            "color": "#880808"
+        },
+        "button": {
+            "label": "Accept",
+            "emoji": "✅",
+            "alreadyAccepted": "Already accepted.",
+            "style": "Secondary",
+            "notAcceptedInTime": "Not accepted in time."
+        },
+        "battleMessages": {
+            "mention": "{user} & {challengedUser}",
+            "challengeAccepted": "{challengedUser} accepted the challenge! Creating battle channel...",
+            "embed": {
+                "title": "EPIC ROAST BATTLES OF HISTORY",
+                "color": "#880808",
+                "description": "{user} VS {challengedUser}!\nSTARTING <t:{time}:R>!"
+            },
+            "ping": "<@&1116752582157795419>, {user} & {challengedUser}",
+            "inBattle": {
+                "BEGIN": "BEGIN!",
+                "stringSelectMenu": {
+                    "label": "Pick a rating for {user}"
+                },
+                "finishEmbed": {
+                    "title": "Time over!",
+                    "description": "3 minutes have passed! The crowd may now rate both contestants!\nYou have 1 and a half minutes to rate the contestants.",
+                    "color": "Blue"
+                },
+                "voteForContestant": "Vote for {user} here:",
+                "battleResultEmbed": {
+                    "title": "Battle Result!",
+                    "fieldName": "Average rating ({user})",
+                    "footer": {
+                        "text": "This channel will get privated in 1 minute..."
+                    },
+                    "description": {
+                        "tie": "No one won! It's a tie!",
+                        "victory": "And the winner is: {winner}!"
+                    }
+                },
+                "button": {
+                    "label": "Delete this channel.",
+                    "emoji": "💥"
+                },
+                "channelPrivated": "This channel got privated. Mods may look into the message history.\nPress the button below at anytime to delete this channel."
+            }
+        }
+    },
+    "aboutChange": {
+        "success": "About me changed successfully!"
+    },
+    "selfDestruct": {
+        "doingTheThing": "Self destructing..."
+    },
+    "runSubcommands": {
+        "subcommandPathMissing": "Error: No subcommand with name {subcommand} can be found!",
+        "commandDataPathMissing": "Error: No command data JSON found at path ../config/commands/{commandName}/main.json!"
+    },
+    "sokoben": {
+        "attemptPlayOthersGame": "This game of sokoben is not owned by you!",
+        "generatingLevel": "Generating level... This could take some time depending on the bot's usage.",
+        "askDeleteInstance": "You already have an open sokoben game! Would you like to end that game?",
+        "instanceDeleted": "The previously open sokoben game was closed. Use this command again to start a new sokoben game.",
+        "gameDoesNotExist": "This sokoben instance was deleted (or it never existed to begin with! Did the bot restart while you were playing it?)",
+        "gameGenerating": "Please wait for your sokoben game to fully generate!",
+        "buttons": {
+            "move": "Move {direction}",
+            "reset": {
+                "label": "Reset",
+                "emoji": "🔄"
+            },
+            "end": {
+                "label": "End game",
+                "emoji": "⏹️"
+            }
+        },
+        "embed": {
+            "color": "Blue",
+            "title": "Sokoben.",
+            "fields": {
+                "howToPlay": {
+                    "name": "How do i play this?",
+                    "value": "Move the {player} emoji with the buttons and push the boxes ({box}) into the {goal} emojis."
+                },
+                "difficulty": {
+                    "name": "Difficulty: {difficulty}",
+                    "value": {
+                        "baby": "The easiest mode, therefore the mode with the smallest {currencyName} reward",
+                        "normal": "Balanced difficulty, alright benCoin reward",
+                        "hard": "The most difficult mode, but its the mode that gives the most {currencyName} upon completion."
+                    }
+                },
+                "victory": {
+                    "name": "You won!",
+                    "value": "You won with {moves} moves and on {difficulty}, which grants you {benCReward} {currencyName}!"
+                },
+                "victorySeed": "You won with {moves} moves and on {difficulty}, which grants you {benCReward} ben-\n*wait a little bit...* it seems that you were using a seed! That means you wont get anything as a reward!"
+            },
+            "footerText": "Moves: {moves}"
+        }
+    },
+    "slotMachine": {
+        "embed": {
+            "color": "#880808",
+            "title": "Slot machine",
+            "description": "Gambling addiction? Never heard of it...",
+            "fields": {
+                "name": {
+                    "jackpot": "{slot} JACKPOT!",
+                    "normal": "{slot} combination ({times}x)"
+                },
+                "value": "{operation} {currencyName}",
+                "profits": {
+                    "name": {
+                        "losses": "Losses",
+                        "profits": "Profits"
+                    },
+                    "value": "{profits} {currencyName}"
+                },
+                "baseField": {
+                    "bet": "Your bet: {bet}",
+                    "baseMultiplier": "Base multiplier: {multiplier}x"
+                }
+            }
+        },
+        "emojiFetchError": "(Emoji couldn't be fetched!)"
+    },
+    "hackLinks": {
+        "embed": {
+            "titles": [
+                "benCoins hack.",
+                "free benCoins working 2010",
+                "BENCOINGENERATOR.exe",
+                "awesomebencoin.money",
+                "How to make FREE BENCOIN!",
+                "click this link for money 🤑"
+            ],
+            "descriptions": [
+                "You get {hackValue} benCoins if you click on the \"Download hack\" button <:trollar:1082462562609803284>",
+                "Click Here For {hackValue} Free benCoins!",
+                "All those {hackValue} benCoins could be yours with just the click of a button!",
+                "If you take the red pill, you get {hackValue} benCoins. If you take the blue pill, it tastes like blueberry and you get happy",
+                "this file is very safe and will give you {hackValue} free benCoins! - Greeder <:GreederAlert:1099895910114279445>",
+                "GAMBLING 🤑🤑🤑 (for {hackValue} benCoins)"
+            ],
+            "color": "Random"
+        },
+        "buttons": [
+            "Download Hack",
+            "Click Here!",
+            "This button!",
+            "Take the red pill.",
+            "File download here.",
+            "Gamble."  
+        ],
+        "taken": [
+            "Hack already downloaded by {user}",
+            "{user} is overly trusting",
+            "{user} wants you to try their game",
+            "Honestly, {user} deserved it",
+            "{user} had a rich Nigerian uncle",
+            "why did {user} do that"
+        ],
+        "removed": [
+            "This hack got taken down by the FBI",
+            "For some reason, the file was deleted",
+            "It was probably a scam anyway",
+            "Not keen on free money?",
+            "Good choice",
+            "Nobody was falling for that"
+        ],
+        "virusInfestedHack": "That hack was infested with viruses! The hacker stole {amount} benCoins from {user}!",
+        "pity": "That hack was infested with viruses! But the hacker felt pity after seeing the pathetic amounts of bencoins you have. So he gave you some bencoins!"
+    },
+    "manage": {
+        "ben_coins": {
+            "embed": {
+                "title": "/manage ben_coins used",
+                "description": "{user} altered {affectedUser}'s benCoins!",
+                "fields": {
+                    "action": {
+                        "name": "Action"
+                    },
+                    "value": {
+                        "name": "Amount"
+                    }
+                }
+            },
+            "altered": "Altered {user}'s benCoins! {user} now has {benCoins} benCoins!" 
+        },
+        "level": {
+            "embed": {
+                "title": "/manage level used",
+                "description": "{user} altered {affectedUser}'s level!",
+                "fields": {
+                    "action": {
+                        "name": "Action"
+                    },
+                    "value": {
+                        "name": "Amount"
+                    }
+                }
+            },
+            "altered": "Altered {user}'s level! {user} is now level {level}!" 
+        },
+        "inventory": {
+            "embed": {
+                "title": "/manage inventory used",
+                "description": "{user} altered {affectedUser}'s inventory!\nThe old inventory and the new altered inventory can be found as attachments above."
+            },
+            "altered": "Altered {user}'s inventory! {user}'s inventory now looks like this:",
+            "invalidJSON": "The inventory JSON you inserted is invalid!"
+        },
+        "about_me": {
+            "embed": {
+                "title": "/manage about_me used",
+                "description": "{user} altered {affectedUser}'s about me section!\nPrevious about me:\n**{prevAbout}**\nNew about me:\n**{newAbout}**"
+            },
+            "altered": "Altered {user}'s about me!" 
+        },
+        "experience": {
+            "embed": {
+                "title": "/manage experience used",
+                "description": "{user} altered {affectedUser}'s experience!",
+                "fields": {
+                    "prevExperienceLevel": {
+                        "name": "Previous experience:",
+                        "value": "{exp}/{neededExp} EXP"
+                    },
+                    "currentExperienceLevel": {
+                        "name": "New experience:",
+                        "value": "{exp}/{neededExp} EXP"
+                    }
+                }
+            },
+            "altered": "Altered {user}'s experience!"
+        },
+        "refresh_commands": {
+            "refresed": "Successfully refreshed all commands!"
+        },
+        "item": {
+            "embed": {
+                "title": "/manage item used",
+                "description": "{user} altered {affectedUser}'s inventory! See the command info below:",
+                "fields": {
+                    "item": {
+                        "name": "Item:"
+                    },
+                    "subtypeMods": {
+                        "name": "Subtype Modifications:"
+                    },
+                    "action": {
+                        "name": "Action:"
+                    }
+                }
+            },
+            "errorCodes": {
+                "-1": "Something went REALLY wrong!!!",
+                "add": {
+                    "0": "{user}'s inventory is full!",
+                    "1": "{user} can only have one {itemName} item!"
+                },
+                "remove": {
+                    "0": "{user}'s inventory is empty!",
+                    "1": "We couldn't find any {itemName} item in {user}'s inventory!"
+                },
+                "unknown": "Error code unknown!",
+                "parseJSON": "Something went wrong while parsing the subtype modifications JSON!\n```js\n{error}\n```",
+                "errorAddingItem": "Something went wrong while adding/removing your item!\n```\n{error}\n```",
+                "inputMissing": "You need to specify both an item ID AND a subtype ID!",
+                "itemDosentExist": "There is no item with ID \"{itemID}\"!",
+                "subtypeDosentExist": "There isn't a subtype ID named \"{subtypeID}\" for item \"{itemName}\"!"
+            },
+            "done": "Altered {user}'s inventory!"
+        }
+    },
+    "leaderboards": {
+        "embed": {
+            "level": {
+                "field": {
+                    "name": "{medal}{place}: {user}",
+                    "value": "Level {value}"
+                },
+                "title": "levels leaderboard: Top 20th.",
+                "color": "Gold"
+            },
+            "benCoins": {
+                "field": {
+                    "name": "{medal}{place}: {user}",
+                    "value": "{value} bencoins"
+                },
+                "title": "bencoins leaderboard: Top 20th.",
+                "color": "Gold"
+            },
+            "footerText": "Leaderboard updates in {time}"
+        }
+    },
+    "checkInventory": {
+        "embed": {
+            "title": "{user}'s inventory",
+            "color": "Aqua",
+            "footerText": "Page {page} of {pages}",
+            "invEmpty": {
+                "name": "Inventory empty!",
+                "value": "This user's inventory is empty!"
+            },
+            "invalidItem": {
+                "name": "INVALID ITEM - \"{itemID}\"",
+                "value": "Invalid item subtype: {itemSubtype}"
+            },
+            "itemField": {
+                "name": "{item} (Slot {slot})",
+                "value": "{itemDesc}\nCount: {count}"
+            }
+        },
+        "button": {
+            "label": {
+                "prev": "Previous page",
+                "next": "Next page"
+            },
+            "emoji": {
+                "prev": "⏮️",
+                "next": "⏭"
+            }
+        },
+        "attemptSeeBotsInventory": "You cannot see a bot's inventory (just know that they have way more things than you.)",
+        "userWithInventoryGone": "The user which owned this inventory is no longer in the server!"
+    },
+    "useItem": {
+        "specifyItemID": "Please specify an item ID!",
+        "specifyItemSubtype": "Please specify an item subtype!",
+        "itemIDMissing": "There is no such item with id \"{itemID}\"!",
+        "itemSubtypeMissing": "There is no such subtype for item {itemName} with id \"{subtypeID}\"!",
+        "userDoesNotOwnItem": "You do not own the item you want to use!",
+        "itemNotUsable": "This item is not usable!",
+        "errorHappenedWhenUsingItem": "An error happened when trying to use your item! Your item was not used and can still be found in your inventory."
+    },
+    "uploadWallpaper": {
+        "sizeNotCorrect": "Your image needs to be {width}x{height} pixels!",
+        "notPNG": "Your image is NOT a png!",
+        "wallpaper_uploaderMissing": "You dont have the wallpaper uploader item!",
+        "illegalName": "The name of your wallpaper contains illegal characters, make sure to only use characters A-Z and 0-9.",
+        "embed": {
+            "title": "Upload wallpaper command",
+            "description": "{user} wants to upload a wallpaper!",
+            "wallpaperNameField": "Wallpaper name:"
+        },
+        "buttons": {
+            "accept": {
+                "label": "Accept",
+                "emoji": "✅"
+            },
+            "decline": {
+                "label": "Decline",
+                "emoji": "❎"
+            }
+        },
+        "mention": "`<@&\\1085292579798663229>`",
+        "requestSent": "Request to upload wallpaper sent, you will recieve a dm saying if your wallpaper was accepted or declined by moderators.",
+        "userWhoSentWallpaperGone": "The user who uploaded this wallpaper left!",
+        "errorWhenDownloadingWallpaper": "An error occoured when trying to download the wallpaper!",
+        "wallpaperAccepted": "You wallpaper (name: \"{wallpaperName}\") got accepted! Equip it now with the /economy change_wallpaper command!",
+        "modAccepted": "You accepted the wallpaper.",
+        "modDeclined": "You declined the wallpaper.",
+        "wallpaperDeclined": "Your wallpaper got declined!",
+        "nameAlreadyUsed": "Someone already has a wallpaper with this name!"
+    },
+    "pin_message": {
+        "missingPinLicense": "You need a pin license to use this command!",
+        "unableFetchChannel": "I was unable to fetch the channel from your message link. Maybe i don't have access to said channel.",
+        "unableFetchMessage": "I was unable to fetch the message with id \"{messageID}\" in the channel {channelMention}.",
+        "messagePinned": "Message pinned!",
+        "messagePinnedNonEphemeral": "{user} pinned message {messageLink} from {pinnedUser}.",
+        "unableFetchPinChannel": "I was unable to fetch the pinned messages channel.",
+        "embed": {
+            "main": {
+                "title": "{user} pinned a message from #{channelName}",
+                "field": {
+                    "name": "Source",
+                    "value": "[Jump!]({messageLink})"
+                }
+            },
+            "extraAttachment": {
+                "title": "Extra attachment"
+            },
+            "nonImages": {
+                "title": "Non image attachment",
+                "value": "[Download the non image attachment here.]({attachmentURL})"
+            }
+        }
+    },
+    "trading": {
+        "errors": {
+            "open": {
+                "attemptTradeWithBot": "You can't trade with bots!",
+                "attemptTradeYourself": "You can't trade with yourself!",
+                "instanceOpen": "You already have a trading request open! Close that trade request first."
+            },
+            "items": {
+                "itemIDMissing": "Specify an item ID!",
+                "itemSubtypeIDMissing": "Specify an item subtype ID!",
+                "itemMissing": "There is no item with ID \"{itemID}\"!",
+                "itemSubtypeMissing": "There is no subtype with ID \"{subtypeID}\" for the item {itemName}!",
+                "tradeNotFound": "You dont have a open trade request!\nOpen one with /trade open!",
+                "editFailed": "Failed to edit the current trade. The trade request has been closed. Open another one with /trade open"
+            },
+            "removeItem": {
+                "notLookingForItem": {
+                    "message": "You are not {chunk} for the item {itemName} to begin with.",
+                    "chunk": {
+                        "offer": "offering",
+                        "lookingFor": "looking"
+                    }
+                }
+            },
+            "addItem": {
+                "noMoreItemsToAdd": {
+                    "chunks": {
+                        "person": {
+                            "offer": "You dont have",
+                            "lookingFor": "{user} dosen't have"
+                        },
+                        "action": {
+                            "offer": "add",
+                            "lookingFor": "give"
+                        }
+                    },
+                    "text": "{person} another {itemName} to {action}!"
+                }
+            },
+            "trade": {
+                "noInstanceFound": "You dont have a open trade request! Open one now with the /trade open command!",
+                "attemptTrySendEmptyTrade": "You cant send a \"empty\" trade! Put some items in the offering or in the looking for table before sending!",
+                "userDosentHaveEnoughItems": "Could not finish the trade because {user} does not have enough of the {itemName} item in the offering table.",
+                "unkownError": "Could not finish the trade. (unknown error.)",
+                "inventoryFull": "Could not finish trade because {user}'s inventory is full.",
+                "carryOneError": "Could not finish trade because {user} can only hold one of {itemName} at once.",
+                "inventoryEmpty": "Could not finish trade because {user}'s inventory is empty.",
+                "missingItem": "Could not finish trade because {user} does not have the {itemName} item."
+            }
+        },
+        "embed": {
+            "open": {
+                "title": "Trading request",
+                "description": "You are in edit mode, add or remove items that you are offering, or items that you want.\n# Trade commands:\n/trade add_item\n/trade remove_item",
+                "fields": {
+                    "offering": {
+                        "name": "Offering",
+                        "value": "Nothing!"
+                    },
+                    "lookingFor": {
+                        "name": "Looking for",
+                        "value": "Nothing!"
+                    }
+                },
+                "color": "DarkGold",
+                "footerText": "Trading with {user}"
+            },
+            "items": {
+                "embedFields": {
+                    "offer": {
+                        "name": "Offering"
+                    },
+                    "lookingFor": {
+                        "name": "Looking for"
+                    }
+                },
+                "amountText": "{itemName} x{amount}\n",
+                "zeroOffer": "Nothing!"
+            },
+            "trade": {
+                "description": "{user} would like to trade with {userToTrade}. Below are the trade's content:",
+                "fields": {
+                    "offer": "What {userToTrade} will get:",
+                    "lookingFor": "What {user} wants:"
+                },
+                "footerText": "Accept the trade by clicking on the \"Accept trade\" button below. • The trade will get automatically closed in 20 seconds.",
+                "log": {
+                    "fieldName": "What {user} got:",
+                    "title": "Trade log",
+                    "description": "{user} (UID: {userUID}) traded with {userToTrade} (UID: {userToTradeUID}).",
+                    "embedColor": "DarkBlue"
+                }
+            }
+        },
+        "buttons": {
+            "open": {
+                "send": {
+                    "label": "Send trade"
+                },
+                "cancel": {
+                    "label": "Cancel trade"
+                }
+            },
+            "trade": {
+                "accept": {
+                    "label": "Accept trade"
+                },
+                "tradeClosed": "The trade has been closed.",
+                "tradeSuccess": "The trade was successfull."
+            }
+        },
+        "items": {
+            "tradeEdited": "Edited the trade request."
+        },
+        "trade": {
+            "tradeClosed": "The trade has been closed.",
+            "ping": "{user} & {userToTrade}",
+            "tradeSent": "Trade request sent!",
+            "tradeCompleted": "The trade was successful!"
+        }
+    },
+    "get_database": {
+        "saving": "Saving user data first, this might take some time...",
+        "saved": "Here's the current database!"
+    },
+    "statusArray": [
+        {
+            "name": " - Everyone in this server.",
+            "type": "Watching"
+        },
+        {
+            "name": " - GAMBLING ",
+            "type": "Playing"
+        },
+        {
+            "name": " - ultimate tv game system",
+            "type": "Playing"
+        },
+        {
+            "name": " - Manic Monolith",
+            "type": "Playing"
+        }
+    ],
+    "statusState": "BenBot V2.0 ({version}) (unused)",
+    "paidMozzPostMessage": "{user} just used the \"Paid Mozz Post\" item! <@457270106737606708> do your job.",
+    "giftItem": {
+       "benCoinsLoot": "You unravel the gift and it contained {benCoins} benCoins",
+       "itemReveal": "You unravel the gift and it contained the {itemName} item!",
+       "errors": {
+           "inventoryFull": "Your inventory is full! You cant open this gift!",
+           "carryOneError": "You already have the {itemName} item in your inventory, you cannot have another one!"
+       }
+    },
+    "backpack_enhancer": {
+        "cantUseAnymore": "You already have the maximum amount of slots that you can have through the backpack enhancer!",
+        "itemUsed": "Backpack enchancer used! Now you have {slots} inventory slots!"
+    },
+    "warnMessageEmbed": {
+        "title": "BEWARE !?!?",
+        "description": "{user} sent a discord invite link/hidden link ([50$ steam] (https://sketchywebsite.net)) below is the actual message content.",
+        "fieldName": "Message content: ",
+        "footerText": "User ID: {UID} Message ID: {MID}"
+    },
+    "invoke_hack": {
+        "invoked": "Hack invoked!"
+    },
+    "checkWallpapers": {
+        "embed": {
+            "title": "{user}'s wallpapers",
+            "color": "Aqua",
+            "footerText": "Page {page} of {pages}",
+            "noWallpapers": {
+                "name": "Inventory empty! (how)",
+                "value": "(how is this possible? everyone starts with the default wallpaper)"
+            },
+            "invalidWallpaper": {
+                "name": "Invalid wallpaper with id: \"{wallpaper}\"!",
+                "value": "this is what happens when you fool around with the database too much..."
+            },
+            "itemField": {
+                "value": "```{description}```Price: {price}"
+            },
+            "customWallpaper": "```This is a custom wallpaper uploaded by the user with a Wallpaper Uploader item.```"
+        },
+        "button": {
+            "label": {
+                "prev": "Previous page",
+                "next": "Next page"
+            },
+            "emoji": {
+                "prev": "⏮️",
+                "next": "⏭"
+            }
+        },
+        "attemptSeeBotsInventory": "Don't check which wallpapers bots have (just know that they have way more things than you.)",
+        "userWithInventoryGone": "The user which owned those wallpapers is no longer in the server!",
+        "noPrice": "N/A"
+    },
+    "throwItemAway": {
+        "autocompleteText": "{item} (Slot {slot})",
+        "errors": {
+            "-1": "An unknown error happened and your item couldn't be thrown away!",
+            "0": "Are you trying to throw the inventory itself away? (you have no items!)",
+            "1": "Are you sure you have the item you want to throw away? I don't think so."
+        },
+        "success": "Thrown {amount} {item} away."
+    },
+    "shutdown_after_error": "BenBot V2 encountered an error!\nWhat a bummer, anyways, here's the error. The bot will shutdown.\n(prevent shutdowns by changing the \"shutdown_upon_exception\" flag in ./config/main.json to false):```ansi\n{error}\n```<@1017898132614434866>",
+    "error_but_not_shutdown": "BenBot V2 encountered an error!\nWhat a bummer, anyways, here's the error. The bot will NOT shutdown (shutdown_upon_exception is set to false)\n```ansi\n{error}\n```<@1017898132614434866>",
+    "work": {
+        "onCooldown": "I think you should rest for a bit before working again (wait {time})",
+        "workDialogue": {
+            "true": [
+                "{user} flipped some burgers at mcdonalds for {bencoins} bencoins",
+                "{user} worked as a cashier at walmart for {bencoins} bencoins",
+                "{user} worked as a waiter at pizza hut for {bencoins} bencoins",
+                "{user} worked as a waiter at little caeser's for {bencoins} bencoins",
+                "{user} worked as a cashier at walgreens for {bencoins} bencoins",
+                "{user} worked as an attendee at lowe's for {bencoins} bencoins",
+                "{user} worked as an attendee at home depot for {bencoins} bencoins",
+                "{user} worked as a waiter at papa john's for {bencoins} bencoins",
+                "{user} worked as a drive-thru employee for {bencoins} bencoins",
+                "{user} worked as a cashier at kfc for {bencoins} bencoins"
+            ],
+            "false": [
+                "{user} tried to work, but accidentally fell into a coma after setting their alarm for 30 years.\nThe medical bill costed {user} {bencoins} bencoins.",
+                "{user} tried to work, but accidentally tripped right next to an amusement park and bought a ticket to every single attraction in the park, all while falling\nThe ticket costed {bencoins} bencoins.\nAt least you had fun.",
+                "Unfortunately, {user} got {bencoins} bencoins robbed by greeder while {user} was in their way to work.",
+                "{user} had a car accident while going to work ({user} does not have an insurance). {user} had to pay {bencoins} bencoins in order to fix the car.",
+                "{user} 🚙 🚅\n(- {bencoins} bencoins)"
+            ]
+        },
+        "tooPoorToFail": [
+            "{user} tried to work, but accidentally fell into a coma after setting their alarm for 30 years.\nThe medical bill would cost {bencoins} bencoins, but {user} can't afford that amount!\nInstead {user} now has to wait 30 seconds more than usual in order to *try* working at another place.",
+            "{user} tried to work, but accidentally tripped right next to an amusement park and bought a ticket to every single attraction in the park, all while falling\nThe ticket costed {bencoins} bencoins, but {user} can't afford that!\nYou gave the park manager 30 seconds of your cooldown in exchange for a single ticket.\nAt least you had fun.",
+            "Greeder tried to rob {bencoins} out of {user}, but {user} does not have {bencoins} bencoins!\nGreeder stole 30 seconds from {user} instead.",
+            "{user} had a car accident while going to work ({user} does not have an insurance). {user} would have to pay {bencoins} bencoins in order to fix the car, but {user} can't afford paying that!\n{user} paid 30 seconds from the cooldown instead.",
+            "{user} 🚙 🚅\n(Extra 30 seconds of cooldown for you.)"
+        ],
+        "shot": "\nAnd on top of all that, you still managed to get shot.\n",
+        "healthcare": {
+            "true": "You didnt had enough bencoins to pay for the healthcare, so they took all your bencoins.",
+            "false": "You had to pay {hcPrice} bencoins for healthcare"
+        }
+    },
+    "benpoints_transfer": {
+        "alreadyConverted": "You already converted your ben points to bencoins!",
+        "error": "This command is unavaiable right now, try again later!",
+        "poor": "You have no ben points to transfer! (or you have less than 8 ben points)",
+        "complete": "Tranfering complete! You got {coins} benpoints!"
+    },
+    "stats": {
+        "embed": {
+            "color": "Aqua",
+            "title": "{user}'s stats",
+            "the_:_character": ":",
+            "field": "{stat}{theCharacter}"
+        },
+        "retrieved": "Successfully retrieved {points} points from {stat}! This is your new stat list:",
+        "invested": "Successfully invested {points} points into {stat}! This is your new stat list:",
+        "notEnoughPoints": "You need {neededPoints} more points in the {stat} stat in order to retrieve {points} points!",
+        "notEnoughFreePoints": "You need {neededPoints} aditional free points in order to invest {points} points into your {stat} stat!"
+    },
+    "job": {
+        "list": {
+            "embed": {
+                "title": "Current jobs",
+                "footerText": "Check the minimum stats required to apply to a job with /job check (job)\nPage {page} of {pages}",
+                "color": "#000000",
+                "value": "{desc}\nWage: {wage}{statBoostText}",
+                "wageText": "\nMax: {max} bencoins\nMin: {min} bencoins",
+                "statBoostText": "\nThis job pays {times}x more each {statValue} {statName} points you have above the minimum requirement."
+            },
+            "button": {
+                "label": {
+                    "prev": "Previous page",
+                    "next": "Next page"
+                },
+                "emoji": {
+                    "prev": "⏮️",
+                    "next": "⏭"
+                }                
+            }
+        },
+        "apply": {
+            "jobDoesntExist": "The job you are trying to apply doesn't exist at all!",
+            "cantApply": "You cannot apply because you dont have the minimum stats for the job! The amount of stats you need to get are as follow: {stats}",
+            "applied": "You are now a {jobName}!"
+        },
+        "check": {
+            "jobDoesntExist": "The job you are trying to check doesn't exist at all!",
+            "embed": {
+                "title": "{jobName} stat requirements:"
+            }
+        },
+        "work": {
+            "loser": "You are unemployed.",
+            "onCooldown": "I think you should rest for a bit before working again ({time} left)",
+            "benco_receptionist": {
+                "success": [
+                    "You spent the entire day doing nothing but talking to strangers, all for {bencoins} bencoins."
+                ],
+                "failure": [
+                    "The day passes, but no one came, no people = no wage."
+                ]
+            },
+            "mobster": {
+                "success": [
+                    "Some random dude dressed in a ninja costume paid you {bencoins} bencoins for you to rig the next mayor election",
+                    "You robbed innocent people in a dance club, the total amount stolen was {bencoins}"
+                ],
+                "failure": [
+                    "You tried stealing {bencoins} from a jock but he noticed it and you ended up getting free bruises on your whole body. (you also lost {bencoins} bencoins)"
+                ]
+            },
+            "janitor": {
+                "success": [
+                    "You cleaned section 3B of BenCo for {bencoins} bencoins"
+                ],
+                "failure": [
+                    "You accidentally went to section 1F of BenCo, which is a maze, you couldn't find the exit and had to pay {bencoins} bencoins for a phone call, rookie mistake."
+                ]
+            },
+            "guard": {
+                "success": [
+                    "You protected benco against Martin Ersted and got {bencoins} bencoins in the process"
+                ],
+                "failure": [
+                    "You got distracted by a butterfly and someone entered BenCo without you knowing, this pathetic mistake costed you {bencoins} bencoins"
+                ]
+            },
+            "salesman": {
+                "success": [
+                    "You sold an old TV saying that it was brand new for {bencoins} bencoins",
+                    "You scammed a elderly man for {bencoins} bencoins"
+                ],
+                "failure": [
+                    "You attempted to scam a mid-age adult but he noticed and filed a lawsuit against you, which you settled for {bencoins} bencoins"
+                ]
+            }
+        }
+    },
+    "bengpt": {
+        "march24": "1000 BenCoins已從您的帳戶中扣除，如果這種行為繼續下去，我們將別無選擇，只能將我們無價的Team Ben Army送到您家門口。請記住，榮耀屬於中國共產黨！",
+        "noticket": "You need a BenGPT Ticket in order to use BenGPT.",
+        "invEmpty": "Your inventory is empty! (???)",
+        "awDangitMoreInventoryDebug": "An unknown error happened, whoops!",
+        "error": "Something went wrong when generating your response!\n```\n{error}\n```",
+        "benCoinsGone": "100 benCoins have been deducted from your account",
+        "response": "```\n{response}\n```"
+    },
+    "stat_growth_pack": {
+        "done": "You now have {freePoints} free stat points!"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "default": {
+        "name": "Default",
+        "description": "The default wallpaper that everyone has!",
+        "price": -1,
+        "obtainable": false
+    },
+    "bencult": {
+        "name": "Ben Cult",
+        "description": "只需 1200 BenCoins，您就可以获得 Team Ben Army 认可的精美壁纸！立即获取。这不是一个请求。 （不包括税费和运费）",
+        "price": 12000,
+        "obtainable": true
+    },
+    "gradient_red_blue": {
+        "name": "Gradient: Red & Blue",
+        "description": "Just a gradient.",
+        "price": 1500,
+        "obtainable": true
+    },
+    "gradient_yellow_red": {
+        "name": "Gradient: Red & Yellow",
+        "description": "Just a gradient.",
+        "price": 1750,
+        "obtainable": true
+    },
+    "stripes_black_white": {
+        "name": "Stripes: Black & White",
+        "description": "A stripe pattern with the colors black and white.",
+        "price": 5000,
+        "obtainable": true
+    },
+    "gradient_rainbow": {
+        "name": "Gradient: Rainbow",
+        "description": "Just a multi-color gradient.",
+        "price": 2000,
+        "obtainable": true
+    },
+    "moai": {
+        "name": "Moai",
+        "description": "🗿",
+        "price": 10000,
+        "obtainable": true
+    },
+    "mt_paint": {
+        "name": "MS. Paint",
+        "description": "The greenish fields in a sunny day, portrayed in a MS Paint drawing, what more do you need?",
+        "price": 500,
+        "obtainable": true
+    },
+    "sun": {
+        "name": "sun.",
+        "description": "sun.",
+        "price": 250,
+        "obtainable": true
+    },
+    "soyben": {
+        "name": "Soyben",
+        "description": "<:soyben:1143984824051323051>",
+        "price": -1,
+        "obtainable": false
+    }
+}

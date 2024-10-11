@@ -1,0 +1,91 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "The BenBot V2.0 Command Data Schema",
+    "type": "object",
+    "properties": {
+      "commandName": {
+        "type": "string"
+      },
+      "commandDesc": {
+        "type": "string"
+      },
+      "subcommandData": {
+        "type": "object",
+        "additionalProperties": false,
+        "patternProperties": {
+          "^.*$": {
+            "type": "object",
+            "properties": {
+              "commandName": {
+                "type": "string"
+              },
+              "commandDesc": {
+                "type": "string"
+              },
+              "ephemeral": {
+                "type": "boolean"
+              },
+              "options": {
+                "type": "object",
+                "additionalProperties": false,
+                "patternProperties": {
+                  "^.*$": {
+                    "type": "object",
+                    "properties": {
+                      "optionName": {
+                        "type": "string"
+                      },
+                      "optionDesc": {
+                        "type": "string"
+                      },
+                      "required": {
+                        "type": "boolean"
+                      },
+                      "optionType": {
+                        "enum": ["Attachment", "Boolean", "Channel", "Integer", "Mentionable", "Number", "Role", "String", "User"]
+                      },
+                      "choices": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "value"
+                          ]
+                        }
+                      },
+                      "autocomplete": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "optionName",
+                      "optionDesc",
+                      "optionType"
+                    ]
+                  }
+                }
+              }
+            },
+            "required": [
+              "commandName",
+              "commandDesc"
+            ]
+          }
+        }
+      }
+    },
+    "required": [
+      "commandName",
+      "commandDesc",
+      "subcommandData"
+    ]
+  }

@@ -1,0 +1,88 @@
+{
+    "clientID": "CLIENT_ID_HERE_NOW!!!!",
+    "botToken": "BOT_TOKEN_HERE_NOW!!!!",
+    "commandsFolderPath": "./commands",
+    "clientEvents": [
+        "messageCreate",
+        "interactionCreate"
+    ],
+    "currencyAcronym": "BenC.",
+    "currencyName": "bencoins",
+    "clientEventsPath": "./client_events",
+    "loggerEnabled": true,
+    "benServerID": "YOUR_SERVER_ID",
+    "logsChannelCarlBot": "logs channel (not required to fill)",
+    "messagesRequirement": 50,
+    "messagesRequirementReward": 10,
+    "hackDropsChannelID": "coins drops (also not required)",
+    "pingRoleID": "ping role id (benco thing)",
+    "everyoneRoleID": "fear",
+    "disabledLoggerPriorities": [],
+    "defaultInventory": {
+        "items": [],
+        "currentWallpaper": "default",
+        "inventorySpaceBoosts": 0,
+        "boughtWallpapers": ["default"],
+        "gamblingModeEnabled": false,
+        "uploadedWallpaperNames": [],
+        "forceSlot": "no",
+        "workCooldown": 0,
+        "workSuccessInARow": 0,
+        "stats": {
+            "freePoints": -1,
+            "intelligence": -1,
+            "agility": -1,
+            "strength": -1,
+            "charm": -1
+        },
+        "currentJob": "none"
+    },
+    "boosterRoleID": "te booster role id",
+    "stringSelectCommandsPath": "./string_select_menu_commands/",
+    "autocompletesPath": "./autocompletes/",
+    "subcommandsFolder": "./subcommands/",
+    "buttonInteractionsPath": "./button_interactions/",
+    "logChannelID": "log channel id (where benbot engine shall report errors if they (and will) happen)",
+    "ignoreUsersLeaderboard": [
+        "316970624251592705",
+        "281527353367068672",
+        "334414585337741312",
+        "328978246764986370",
+        "1017898132614434866",
+        "464837576478687252",
+        "738601378511061004",
+        "536784836052910083",
+        "477898535186989059",
+        "410198114734178315",
+        "1139277069168156797"
+    ],
+    "privilegedRoles": [
+        "1081971071118483526",
+        "1082094887236804649",
+        "1085292579798663229",
+        "1139995178577449011",
+        "1139996423325241486",
+        "1139277069168156797",
+        "1081964732346540143",
+        "1082867928485089360",
+        "1082003447315968011",
+        "1082003919506505809"
+    ],
+    "allowedPings": [
+        "1134924411317784686",
+        "1107046150919438427",
+        "1136019394489753722",
+        "1116752582157795419"
+    ],
+    "fixedEXPGain": 65,
+    "pinChannelID": "benco thing",
+    "imagePermsRoleID": "also benco thing.",
+    "itemAddFailureReward": {
+        "min": 200,
+        "max": 700
+    },
+    "version meaning": "v(major update).(small update).(fix)",
+    "botVersion": "v1.9.0",
+    "shutdown_upon_exception": false,
+    "benbotNewserRoleID": "benco thing 2"
+}

@@ -1,0 +1,1 @@
+module.exports = (num, max, min) => Math.min(Math.max(num, min), max);

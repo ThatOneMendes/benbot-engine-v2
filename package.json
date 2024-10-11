@@ -1,0 +1,22 @@
+{
+  "name": "benbot-engive-v2",
+  "version": "1.0.0",
+  "description": "The undelying engine behind BenBot V2.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.55",
+    "class-transformer": "^0.5.1",
+    "discord.js": "^14.16.1",
+    "enhanced-ms": "^3.0.0",
+    "jszip": "^3.10.1",
+    "sequelize": "^6.37.3",
+    "sokoban-engine": "^1.0.1",
+    "sqlite3": "^5.1.7"
+  }
+}

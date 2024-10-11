@@ -1,0 +1,216 @@
+{
+    "xp_boost": {
+        "generalName": "EXP Boost",
+        "stackable": false,
+        "flags": ["canOnlyCarryOne"],
+        "maxStack": 1,
+        "subtypes": {
+            "tier_1": {
+                "description": "Gives you 125 extra EXP every time you send a message.\nWears off after 30 messages.",
+                "itemIcon": "xp_boost_1.png",
+                "itemName": "EXP Boost (Tier 1)",
+                "subtypeData": {
+                    "uses": 30,
+                    "xpGain": 125
+                },
+                "price": 600
+            },
+            "tier_2": {
+                "description": "Gives you 85 extra EXP every time you send a message.\nWears off after 60 messages.",
+                "itemIcon": "xp_boost_2.png",
+                "itemName": "EXP Boost (Tier 2)",
+                "subtypeData": {
+                    "uses": 60,
+                    "xpGain": 85
+                },
+                "price": 1500
+            },
+            "tier_3": {
+                "description": "Gives you 50 extra EXP every time you send a message.\nWears off after 120 messages.",
+                "itemIcon": "xp_boost_3.png",
+                "itemName":"EXP Boost (Tier 3)",
+                "subtypeData": {
+                    "uses": 120,
+                    "xpGain": 50
+                },
+                "price": 3000
+            }
+        },
+        "mainSubtype": "tier_1"
+    },
+    "image_perms": {
+        "generalName": "Temporary Image Perms",
+        "stackable": false,
+        "flags": ["canOnlyCarryOne"],
+        "maxStack": 1,
+        "subtypes": {
+            "tier_1": {
+                "description": "Allows you to post images in whichever channel you like. Breaks after sending 1 image.",
+                "itemIcon": "image_perms.png",
+                "itemName": "Temporary Image Perms (Tier 1)",
+                "subtypeData": {
+                    "uses": 1
+                },
+                "price": 1500
+            },
+            "tier_2": {
+                "description": "Allows you to post images in whichever channel you like. Breaks after sending 3 images.",
+                "itemIcon": "image_perms.png",
+                "itemName": "Temporary Image Perms (Tier 2)",
+                "subtypeData": {
+                    "uses": 3
+                },
+                "price": 2700
+            },
+            "tier_3": {
+                "description": "Allows you to post images in whichever channel you like. Breaks after sending 5 images.",
+                "itemIcon": "image_perms.png",
+                "itemName": "Temporary Image Perms (Tier 3)",
+                "subtypeData": {
+                    "uses": 5
+                },
+                "price": 3000
+            }
+        },
+        "mainSubtype": "tier_1"
+    },
+    "wallpaper_uploader": {
+        "generalName": "Wallpaper Uploader",
+        "stackable": true,
+        "flags": [],
+        "maxStack": 6,
+        "subtypes": {
+            "main": {
+                "description": "Allows you to upload any custom wallpaper for yourself to use! If you already have a exclusive wallpaper you will have to pay a fee to upload another",
+                "itemIcon": "image_perms.png",
+                "itemName": "Wallpaper Uploader",
+                "subtypeData": {},
+                "price": 5000
+            }
+        },
+        "mainSubtype": "main"
+    },
+    "exp_trinket": {
+        "generalName": "EXP Trinket",
+        "stackable": false,
+        "flags": ["canOnlyCarryOne"],
+        "maxStack": 1,
+        "subtypes": {
+            "main": {
+                "itemName": "EXP Trinket",
+                "description": "Gives you extra EXP when you send a message, at the cost of less benCoins when leveling up, and worse item drops.\nWears off after 3 levels.",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {
+                    "uses": 3
+                },
+                "price": 2000
+            }
+        },
+        "mainSubtype": "main"
+    },
+    "gift": {
+        "generalName": "Gift",
+        "stackable": false,
+        "flags": ["cannotAppearInShop","consumable"],
+        "maxStack": 1,
+        "subtypes": {
+            "tier_1": {
+                "itemName": "Red gift",
+                "description": "Cardboard box wrapped by red paper, may contain deadly substances, very festive.",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {},
+                "price": 7000
+            }
+        },
+        "mainSubtype": "tier_1"
+    },
+    "pin_license": {
+        "generalName": "Pin license",
+        "stackable": true,
+        "flags": [],
+        "maxStack": 12,
+        "subtypes": {
+            "main": {
+                "itemName": "Pin license",
+                "description": "Allows you to \"pin\" ONE message into #starboard-but-better.",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {},
+                "price": 5000
+            }
+        },
+        "mainSubtype": "main"
+    },
+    "mozz_post": {
+        "generalName": "Paid Mozz Post",
+        "stackable": false,
+        "flags": ["canOnlyCarryOne", "consumable"],
+        "maxStack": 1,
+        "subtypes": {
+            "main": {
+                "itemName": "Paid Mozz Post",
+                "description": "Ping deli for a mozz post.",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {},
+                "price": 500
+            }
+        },
+        "mainSubtype": "main"
+    },
+    "backpack_enhancer": {
+        "generalName": "Backpack Enhancer",
+        "stackable": true,
+        "flags": ["cannotAppearInShop", "consumable"],
+        "maxStack": 5,
+        "subtypes": {
+            "main": {
+                "itemName": "Backpack Enhancer",
+                "description": "Gives you 5 extra inventory slots!\n**This item is consumable**:\nUse it with `/use_item Backpack Enhancer`.",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {},
+                "price": 0
+            }
+        },
+        "mainSubtype": "main"
+    },
+    "bengpt_ticket": {
+        "generalName": "BenGPT Ticket",
+        "stackable": true,
+        "flags": [],
+        "maxStack": 10,
+        "subtypes": {
+            "main": {
+                "itemName": "BenGPT Ticket",
+                "description": "Gives you the rights to ask our super advanced bengpt a question!",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {},
+                "price": 500
+            }
+        },
+        "mainSubtype": "main"
+    },
+    "stats_growth_pack": {
+        "generalName": "Stats Pack",
+        "stackable": true,
+        "flags": ["consumable"],
+        "subtypes": {
+            "tier_1": {
+                "itemName": "Stats Pack (tier 1)",
+                "description": "Gives you 5 free stats points.",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {
+                    "amountFreePoints": 5
+                },
+                "price": 1700
+            },
+            "tier_2": {
+                "itemName": "Stats Pack (tier 2)",
+                "description": "Gives you 8 free stats points.",
+                "itemIcon": "placeholder.png",
+                "subtypeData": {
+                    "amountFreePoints": 8
+                },
+                "price": 2500
+            }
+        }
+    }
+}

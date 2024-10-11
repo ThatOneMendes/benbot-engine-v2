@@ -1,0 +1,6 @@
+{
+    "unobtainable": "unobtainable",
+    "canOnlyHaveOne": "canOnlyCarryOne",
+    "cannotAppearInShop": "cannotAppearInShop",
+    "consumable": "consumable"
+}
